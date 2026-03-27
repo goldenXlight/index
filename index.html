@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - [YOUR NAME]</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #2980b9;
+            --text-color: #333;
+            --light-gray: #f9f9f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .page {
+            background: white;
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        header {
+            border-bottom: 4px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 26pt;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            color: var(--secondary-color);
+            font-size: 10pt;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 14pt;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 12px;
+            padding-bottom: 5px;
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .sub-header {
+            font-style: italic;
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+        }
+
+        ul {
+            margin-left: 20px;
+            list-style-type: circle;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .badge {
+            background: var(--light-gray);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 9pt;
+            border: 1px solid #ddd;
+            font-weight: 500;
+        }
+
+        @media print {
+            body { background: none; padding: 0; }
+            .page { box-shadow: none; margin: 0; width: 100%; }
+            @page { margin: 1.5cm; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <header>
+        <h1>[YOUR FULL NAME]</h1>
+        <div class="contact-info">
+            <span>📍 Address: [Oslo, Norway]</span>
+            <span>📞 Phone: [Your Phone Number]</span>
+            <span>✉️ Email: [Your Email Address]</span>
+            <span>🔗 LinkedIn: [Optional Link]</span>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p>
+            Motivated 18-year-old student currently pursuing a Bachelor’s degree in <strong>Informatics: Programming and System Architecture at the University of Oslo (UiO)</strong>. I am a disciplined and quick-learning individual with practical experience in retail and community volunteering. I thrive in fast-paced environments, maintain high punctuality, and am currently seeking a part-time position to balance with my studies.
+        </p>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="item">
+            <div class="item-header">
+                <span>BSc in Informatics: Programming and System Architecture</span>
+                <span>2025 — Present</span>
+            </div>
+            <div class="sub-header">University of Oslo (UiO)</div>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span>International Baccalaureate (IB) Diploma</span>
+                <span>2023 — 2025</span>
+            </div>
+            <div class="sub-header">Northern Lights International School</div>
+            <ul>
+                <li>Focused on analytical thinking, problem-solving, and academic rigor.</li>
+                <li>Developed strong time-management skills and the ability to handle complex workloads.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+        <div class="item">
+            <div class="item-header">
+                <span>Store Assistant</span>
+                <span>Summer 2024</span>
+            </div>
+            <div class="sub-header">Bunnpris, Molde</div>
+            <ul>
+                <li>Provided customer service and efficiently managed point-of-sale (POS) systems.</li>
+                <li>Responsible for receiving goods, restocking shelves, and ensuring a clean store environment.</li>
+                <li>Handled busy periods and customer inquiries with professionalism and speed.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span>Volunteer & Event Support</span>
+                <span>Ongoing</span>
+            </div>
+            <div class="sub-header">Hizmet Community Activities</div>
+            <ul>
+                <li>Assisted in organizing and executing large community events, including Eid celebrations and youth camps.</li>
+                <li>Managed logistics, food services, and activity coordination for large groups.</li>
+                <li>Developed strong teamwork and leadership skills through hands-on community service.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Languages & Skills</h2>
+        <div style="margin-bottom: 15px;">
+            <strong>Languages:</strong>
+            <div class="skills-container" style="margin-top: 5px;">
+                <span class="badge">Turkish: Native</span>
+                <span class="badge">English: Fluent</span>
+                <span class="badge">Norwegian: Good Working Proficiency</span>
+            </div>
+        </div>
+        <div>
+            <strong>Technical & Professional:</strong>
+            <div class="skills-container" style="margin-top: 5px;">
+                <span class="badge">Programming (Java/Python)</span>
+                <span class="badge">POS Systems</span>
+                <span class="badge">Customer Service</span>
+                <span class="badge">Problem Solving</span>
+                <span class="badge">High Work Capacity</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Personal Attributes</h2>
+        <ul>
+            <li><strong>Fast Learner:</strong> Ability to quickly master new systems, routines, and technical tools.</li>
+            <li><strong>Flexible:</strong> Available for evening and weekend shifts, and willing to take on extra shifts at short notice.</li>
+            <li><strong>Structured:</strong> Highly organized and precise in the execution of all tasks.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>References</h2>
+        <p>Available upon request.</p>
+    </section>
+</div>
+
+</body>
+</html>
